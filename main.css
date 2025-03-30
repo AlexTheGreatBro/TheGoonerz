@@ -40,7 +40,7 @@ body{
 }
 
 .head1{
-    background-image: url(../img/grey.jpg);
+    background-image: url(grey.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: head1;
@@ -51,7 +51,7 @@ body{
 }
 
 .head2{
-    background-image: url(../img/vibrant.jpg);
+    background-image: url(vibrant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: head2;
