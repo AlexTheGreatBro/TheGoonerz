@@ -8,6 +8,7 @@ body{
 .container{
     min-height: 100vh;
     min-height: 100dvh;
+    overflow: none;
     font: roboto;
     display: grid;
     gap:8px;
