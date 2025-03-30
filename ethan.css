@@ -1,0 +1,137 @@
+.container{
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: hidden;
+    font: roboto;
+    display: grid;
+    background-image: linear-gradient(to bottom, #fa7c34,#f96c1c, #f75d06, #df5406);
+    gap:10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2% 2% 4% auto 37%;
+    grid-template-areas: 
+    "goon goon"
+    "top-bar top-bar"
+    "head head"
+    "left right"
+    "pic1 pic2"
+    ;
+}
+
+.goon{
+    grid-area: goon;
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.top-bar{
+    grid-area: top-bar;
+    align-content: center;
+    text-align: center;
+}
+
+.left{
+    grid-area: left;
+    text-align: center;
+    border: #222 solid 1px;
+    margin: 10px;
+}
+
+.right{
+    grid-area: right;
+    text-align: center;
+    border: #222 solid 1px;
+    margin: 10px;
+}
+
+.head{
+    grid-area: head;
+    align-content: center;
+    text-align: center;
+}
+
+.pic1{
+    grid-area: pic1;
+    align-content: center;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.pic2{
+    grid-area: pic2;
+    align-content: center;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.edge{
+    border-radius: 4px;
+}
+
+ul{
+    list-style-type: none;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+hr{
+    border-color: #222;
+}
+
+.Alpha{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.landon{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.alex{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.ben{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.brandon{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.ethan{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "goon"
+        "top-bar"
+        "head"
+        "left"
+        "right"
+        "pic1"
+        "pic2"
+        ;
+    }
+}

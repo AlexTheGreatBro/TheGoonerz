@@ -1,0 +1,139 @@
+body{
+    background-image: linear-gradient(to top right, #39ff14, #8a00c4);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container{
+    min-height: 100vh;
+    min-height: 100dvh;
+    font: roboto;
+    display: grid;
+    gap:8px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2% 5% 20% 20% auto;
+    grid-template-areas: 
+    "goon goon"
+    "top-bar top-bar"
+    "head1 head2"
+    "body body"
+    "pic pic"
+    ;
+}
+
+.goon{
+    grid-area: goon;
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.top-bar{
+    grid-area: top-bar;
+    align-content: center;
+    text-align: center;
+
+}
+
+.head1{
+    background-image: url(../img/grey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: head1;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.head2{
+    background-image: url(../img/vibrant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: head2;
+    color:whitesmoke;
+    text-align: center;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.body{
+    grid-area: body;
+    text-align: center;
+}
+
+.pic{
+    grid-area: pic;
+    margin: 20px;
+}
+
+img{
+    border-radius: 4px;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.gallery{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.5rem;
+}
+
+.Alpha{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.landon{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.alex{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.ben{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.brandon{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.ethan{
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "goon"
+        "top-bar"
+        "head1"
+        "head2"
+        "body"
+        "pic"
+        ;
+    }
+}
